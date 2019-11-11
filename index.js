@@ -17,7 +17,7 @@ inquirer.prompt([
 ]).then(function(response){
 axios.get("https://api.github.com/users/" + response.name )
    .then(function(axiosResponse){
-       var 
+       
        fs.writeFile(response.name + ".md", )
        console.log(axiosResponse)
    })
