@@ -14,11 +14,11 @@ inquirer.prompt([
     choices:["Blue","Red","White","Black"],
     name: "preferredComm"
   }
-
-
 ]).then(function(response){
 axios.get("https://api.github.com/users/" + response.name )
    .then(function(axiosResponse){
+       var 
+       fs.writeFile(response.name + ".md", )
        console.log(axiosResponse)
    })
 })
